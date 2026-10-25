@@ -1,4 +1,4 @@
-# PromQL notes
+# PromQL notes:
 
 Every query on the dashboard, with what it computes. 
 

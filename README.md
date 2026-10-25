@@ -11,7 +11,7 @@ matched with a spike in CPU, memory or disk.
 
 Each row is something the assignment PDF asks for, and where it is in this repo.
 
-### Final deliverables and submission instructions
+### Final deliverables
 
 | What the assignment asks for | Where it is |
 |------------------------------|-------------|
@@ -26,7 +26,6 @@ About the two dashboard files: `dashboard_export/...export.json` is the file I d
 loads the dashboard automatically. If you want to import by hand: Grafana > Dashboards > New > Import, upload the
 export file, and pick your Prometheus data source.
 
-### Grading rubric 
 
 | Category |What to look at |
 |----------|-----------------|
@@ -61,7 +60,7 @@ DA3408_Assignment4/
 │   └── provisioning/              data source + dashboard provider config
 ├── dashboard_export/              the dashboard JSON export (deliverable)
 ├── docs/
-│   ├── PROMQL_NOTES.md            every query explained
+│   ├── PromQL_notes.md            every query explained
 │   └── sample_metrics.txt         copy of /metrics taken after a run
 ├── scripts/
 │   └── make_zip.py                builds a test ZIP for the Bulk tab
@@ -180,7 +179,7 @@ it, **4** system resources (node_exporter), **5** application vs system correlat
 | Story of the plot | The rest of each description says what to look for. |
 
 Queries were checked against a live Prometheus with node_exporter running while a load script ran. Every query
-returned data. The logic of each query is written down in `docs/PROMQL_NOTES.md`.
+returned data. The logic of each query is written down in `docs/PromQL_notes.md`.
 
 ---
 

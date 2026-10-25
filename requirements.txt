@@ -1,0 +1,7 @@
+streamlit>=1.40
+prometheus-client>=0.20
+psutil>=5.9
+pillow>=10.0
+pandas>=2.0
+transformers>=4.40
+# torch is installed separately (CPU wheel) - see README

@@ -1,0 +1,15 @@
+# Minimal Alertmanager setup. Alerts are grouped and show up in the
+# Alertmanager UI (http://localhost:9093) and in Prometheus (/alerts).
+#
+# To actually get notified, add a config under the receiver, e.g. a webhook:
+#   webhook_configs:
+#     - url: "https://example.com/hook"
+route:
+  receiver: default
+  group_by: ["alertname"]
+  group_wait: 5s
+  group_interval: 30s
+  repeat_interval: 1h
+
+receivers:
+  - name: default
